@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Simulación de Despegue</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <h1>Simulación de Despegue</h1>
+
+        <div id="setup">
+
+            <label for="time">Tiempo de cuenta regresiva (segundos):</label>
+            
+            <input type="number" id="time" min="5" max="120" value="10">
+            
+            <button id="iniciarBtn">Iniciar</button>
+        </div>
+
+        <div id="barra-progreso-container">
+            <div id="barra-progreso"></div>
+        </div>
+
+        <div id="conteo"></div>
+
+        <div id="videoDespegue">
+
+            <h2>¡Despegue!</h2>
+
+            <video autoplay muted loop width="100%" style="max-height: 280px;">
+                <source src="despegue_video.mp4" type="video/mp4">
+            </video>
+            <br>
+            <button id="volverBtn" style="margin-top:2rem;">Volver al inicio</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <a href="https://github.com/JRiveraCode/" target="_blank" rel="noopener" class="github-link">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="github-icon">
+                Ir a GitHub
+            </a> JRiveraCode
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
