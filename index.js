@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         conteo.classList.add('fade-in');
         let actual = tiempo;
         intervalId = setInterval(() => {
-            actual -=3;
+            actual -= 3;
             if (actual > 0) {
                 conteo.textContent = actual;
                 barraProgreso.style.width = ((actual / tiempo) * 100) + '%';
