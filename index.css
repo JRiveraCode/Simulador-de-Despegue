@@ -7,7 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .container {
@@ -18,6 +18,7 @@ body {
     text-align: center;
     max-width: 95vw;
     width: 400px;
+    margin: auto;
 }
 
 h1 {
@@ -107,16 +108,14 @@ button:hover {
 
 footer {
     width: 100vw;
-    background: #222c;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.2), rgb(34, 34, 34));
     color: #fff;
     padding: 1rem 0;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2rem;
+    position: static;
 }
 
 .footer-content {

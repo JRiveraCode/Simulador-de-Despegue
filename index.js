@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const setup = document.getElementById('setup');
     const video = document.getElementById('videoDespegue');
     const volverBtn = document.getElementById('volverBtn');
+    const barra = document.getElementById('barra-progreso-container');
 
     let intervalId = null;
 
@@ -35,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 conteo.textContent = '¡Despegue!';
                 conteo.style.color = '#1e90ff';
                 setTimeout(() => {
+                    barra.style.display = 'none';
                     conteo.style.display = 'none';
                     video.style.display = 'block';
                     video.classList.add('fade-in');
@@ -54,8 +56,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (barraProgreso) {
             barraProgreso.style.width = '100%';
             setTimeout(() => {
+                barra.style.display = 'block';
                 barraProgreso.style.width = ((tiempo / tiempo) * 100) + '%';
-            }, 100);
+            }, 0);
         }
     });
 });
